@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+        <div class="container">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <h1><a class="navbar-brand text--indent" href="index.html">ALOHA</a></h1>
+    
+            <a href="#"><img src="assets/images/profile.jpg" alt="profile-photo" class="profile--widthsm mr-2 d-sm-none"></a>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav list-unstyled">
+                    <li class="nav-item dropdown px-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons text--md">
+                                language
+                            </i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Chinese</a>
+                            <a class="dropdown-item" href="#">Japanese</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/images/profile.jpg" alt="profile-photo" class="profile--widthsm mr-2">
+                            <span>David Lin</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">User Settings</a>
+                            <a class="dropdown-item" href="#">User Profile</a>
+                            <a class="dropdown-item" href="#">Booking History</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="mt-9 container-sm">
+        <div class="row flex-lg-row-reverse">
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                <div class="d-flex align-items-center justify-content-between mb-3 mb-lg-4">
+                    <div class="d-flex align-items-center">
+                        <h2 class="h4 mb-0 mr-2">Profile</h2>
+                        <div class="badge badge-primary d-flex align-items-center p-2">
+                            <span class="material-icons text--md">
+                                check
+                            </span>
+                            <p class="text--sm mb-0">VERIFIED</p>
+                        </div>
+                    </div>
+                    <p class="text--sm text-primary mb-0">EDIT</p>
+                </div>
+                <div class="bg-secondary rounded p-4 d-flex flex-column flex-sm-row flex-lg-column">
+                    <div class="d-flex justify-content-between mb-4 profile--areawidth">
+                        <div>
+                            <h3 class="h6 mb-4 d-none d-sm-block d-lg-none">User details</h3>
+                            <div class="d-flex">
+                                <img src="assets/images/profile.jpg" alt="user" class="profile--width rounded d-none d-sm-block d-lg-none mr-md-3">
+                                <div>
+                                    <h3 class="h6 mb-4 d-sm-none d-lg-block">User details</h3>
+                                    <p class="text--sm text-muted mb-3">David Lin</p>
+                                    <p class="text--sm text-muted mb-3">david0520@mail.com.tw</p>
+                                    <p class="text--sm text-muted">+886 9 32 456 789</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/images/profile.jpg" alt="user" class="profile--width rounded d-sm-none d-lg-block">
+                    </div>
+                    <div class="profile--areawidth">
+                        <h3 class="h6 mb-4">Payment methods</h3>
+                        <div class="d-flex">
+                            <div class="bg-white rounded p-3 mr-2 w-50">
+                                <p class="text-muted text--sm mb-0">
+                                    xxxx-xxxx-7890
+                                </p>
+                                <p class="text-muted text--sm mb-0">
+                                    DAVID LIN
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="text-muted text--sm mb-0">
+                                        08/2029
+                                    </p>
+                                    <span class="material-icons text--md">
+                                        credit_card
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded w-50 d-flex align-items-center justify-content-center">
+                                <span class="material-icons text-primary text--mxl">
+                                    add_circle
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-8">
+                <h2 class="h4">My Bookings</h2>
+                <ul class="nav nav-tabs border-0 mb-4 list-unstyled" id="myTab" role="tablist">
+                    <li class="nav-item border-bottom border-muted" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#upcoming" role="tab" aria-controls="bali"
+                            aria-selected="true">Upcoming</a>
+                    </li>
+                    <li class="nav-item border-bottom border-muted"" role=" presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="okinawa"
+                            aria-selected="false">Completed</a>
+                    </li>
+                </ul>
+                <div class="tab-content mb-5 mb-md-8" id="myTabContent">
+                    <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="Upcoming-tab">
+                        <ul class="list-unstyled">
+                            <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-4 mb-md-3 mb-lg-4 flex-column flex-sm-row">
+                                <img class="card--profileimg card--profilewidth rounded--toppc d-block" src="assets/images/Rachada1.jpg" alt="Upcoming1">
+                                <div class="px-3 py-4 bg--transform">
+                                    <div class="d-flex mb-2">
+                                        <span class="material-icons mr-3">
+                                            airline_seat_individual_suite
+                                        </span>
+                                        <div>
+                                            <p class="h6 mb-0">Rachada Hotel</p>
+                                            <p class="text--sm text-muted mb-0">Deluxe Suite with Pool</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <span class="material-icons mr-3">
+                                            date_range
+                                        </span>
+                                        <div>
+                                            <p class="h6 mb-0">17 June 2020 - 19 June 2020</p>
+                                            <p class="text--sm text-muted mb-0">2 nights・2 adults</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-icons mr-3">
+                                            attach_money
+                                        </span>
+                                        <div>
+                                            <p class="h6 mb-0">TWD 4,633</p>
+                                            <p class="text--sm text-muted mb-0">includes taxes and charges</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3 py-3 py-sm-4 bg--transform rounded--bottompc">
+                                    <p class="text--sm text-primary mb-0">VIEW DETAILS</p>
+                                </div>
+                            
+                            </li>
+                            <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4 flex-column flex-sm-row">
+                                <img class="card--profileimg card--profilewidth rounded--toppc d-block" src="assets/images/Chatuchack1.jpg"
+                                    alt="Upcoming2">
+                                <div class="px-3 py-4 bg--transform">
+                                    <div class="d-flex mb-2">
+                                        <span class="material-icons mr-3">
+                                            airline_seat_individual_suite
+                                        </span>
+                                        <div>
+                                            <p class="h6 mb-0">WOW Life Hotel</p>
+                                            <p class="text--sm text-muted mb-0">Standard Double Room</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <span class="material-icons mr-3">
+                                            date_range
+                                        </span>
+                                        <div>
+                                            <p class="h6 mb-0">8 Sep 2020 - 15 Sep 2020</p>
+                                            <p class="text--sm text-muted mb-0">7 nights・2 adults</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-icons mr-3">
+                                            attach_money
+                                        </span>
+                                        <div>
+                                            <p class="h6 mb-0">TWD 13,084</p>
+                                            <p class="text--sm text-muted mb-0">includes taxes and charges</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3 py-3 py-sm-4 bg--transform rounded--bottompc">
+                                    <p class="text--sm text-primary mb-0">VIEW DETAILS</p>
+                                </div>
+                            
+                            </li>
+                        </ul>
+            
+            
+                    </div>
+                    <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="Completed-tab">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container d-flex justify-content-center justify-content-sm-between align-items-center py-4">
+        <div class="d-flex align-items-center justify-content-between flex-column-reverse flex-sm-row">
+            <p class="text--sm text-muted mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex align-items-center mb-sm-0 mb-3">
+                <li class="text--sm text-muted px-1 ml-1">FAQs</li>
+                <li class="text--sm text-muted px-1 ml-1">Terms of use</li>
+                <li class="text--sm text-muted px-1 ml-1">Privacy policy</li>
+            </ul>
+        </div>
+        <div class="align-items-center d-none d-md-flex">
+            <div class="d-flex align-items-center">
+                <i class="material-icons">
+                    language
+                </i>
+                <select name="language" id="language" class="border-0 text--sm text-muted">
+                    <option value="English" selected>English</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Japanese">Japanese</option>
+                </select>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="material-icons">
+                    attach_money
+                </i>
+                <select name="currency" id="currency" class="border-0 text--sm text-muted">
+                    <option value="TWD" selected>TWD</option>
+                    <option value="USD">USD</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+</html>

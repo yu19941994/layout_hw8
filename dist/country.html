@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+    <div class="container">
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <h1><a class="navbar-brand text--indent" href="index.html">ALOHA</a></h1>
+
+        <a href="login.html" class="text-decoration-none text-dark d-sm-none">Login</a>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav list-unstyled">
+                <li class="nav-item dropdown px-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons text--md">
+                            language
+                        </i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Chinese</a>
+                        <a class="dropdown-item" href="#">Japanese</a>
+                    </div>
+                </li>
+                <li class="nav-item px-4">
+                    <a class="nav-link" href="#">Sign up</a>
+                </li>
+                <li class="nav-item px-4 d-none d-sm-block">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- search -->
+<div class="mt-8 bg-secondary py-3 py-md-4 mb-3 mb-md-4">
+    <div class="container-md d-flex justify-content-between align-items-center">
+        <div class="dropdown w-100 mx-2 mb-0 d-none d-md-block">
+            <button class="btn btn-white rounded-sm w-100 d-flex w-100 py-3 px-lg-3" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="material-icons mr-2">location_on</span>
+                <div class="text-left">
+                    <p class="text-black text--xs mb-0">Destination</p>
+                    <p class="text-muted text--xs mb-0">Bangkok, Thailand</p>
+                </div>
+            </button>
+            <div class="dropdown-menu rounded-0 w-100" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item d-flex" href="#">
+                    <span class="material-icons mr-2">
+                        star
+                    </span>
+                    <div class="d-flex flex-column">
+                        <p class="mb-0">Bankok</p>
+                        <p class="text-muted mb-0"><small>Thailand</small></p>
+                    </div>
+                </div>
+                <div class="dropdown-item d-flex" href="#">
+                    <span class="material-icons mr-2">
+                        star
+                    </span>
+                    <div class="d-flex flex-column">
+                        <p class="mb-0">Osaka</p>
+                        <p class="text-muted mb-0"><small>Japan</small></p>
+                    </div>
+                </div>
+                <div class="dropdown-item d-flex" href="#">
+                    <span class="material-icons mr-2">
+                        star
+                    </span>
+                    <div class="d-flex flex-column">
+                        <p class="mb-0">Roma</p>
+                        <p class="text-muted mb-0"><small>Italy</small></p>
+                    </div>
+                </div>
+                <div class="dropdown-item d-flex" href="#">
+                    <span class="material-icons mr-2">
+                        star
+                    </span>
+                    <div class="d-flex flex-column">
+                        <p class="mb-0">Paris</p>
+                        <p class="text-muted mb-0"><small>London</small></p>
+                    </div>
+                </div>
+                <div class="dropdown-item d-flex" href="#">
+                    <span class="material-icons mr-2">
+                        star
+                    </span>
+                    <div class="d-flex flex-column">
+                        <p class="mb-0">Reykjavik</p>
+                        <p class="text-muted mb-0"><small>Iceland</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <label for="datepicker" class="position-relative w-100 mb-0 mx-2 d-none d-md-block">
+            <input type="text" class="rounded-sm btn btn-white py-14 px-lg-3 w-100" id="datepicker" placeholder="">
+            <span class="datepicker__icon material-icons mr-2 position-absolute">date_range</span>
+            <div class="text-left position-absolute position--search">
+                <p class="text-black text--xs mb-0">Check-in / out</p>
+                <p class="text-muted text--xs mb-0">17 June - 19 June</p>
+            </div>
+        
+        </label>
+        <div class="dropdown w-100 mx-2 mb-0 d-none d-md-block">
+            <button class="btn btn-white rounded-sm w-100 d-flex w-100 py-3 px-lg-3" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="material-icons mr-4">person</span>
+                <div class="text-left">
+                    <p class="text-black text--xs mb-0">Guests</p>
+                    <p class="text-muted text--xs mb-0">2 adults・1 room</p>
+                </div>
+            </button>
+            <div class="dropdown-menu rounded-0 w-100" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item d-flex justify-content-between py-3" href="#">
+                    <p class="mb-0">Adult</p>
+                    <div class="d-flex align-items-center">
+                        <span class="material-icons">
+                            remove
+                        </span>
+                        <p class="text-muted mb-0 mx-3">2</p>
+                        <span class="material-icons">
+                            add
+                        </span>
+                    </div>
+                </div>
+                <div class="dropdown-item d-flex justify-content-between py-3" href="#">
+                    <p class="mb-0">Child</p>
+                    <div class="d-flex align-items-center">
+                        <span class="material-icons">
+                            remove
+                        </span>
+                        <p class="text-muted mb-0 mx-3">0</p>
+                        <span class="material-icons">
+                            add
+                        </span>
+                    </div>
+                </div>
+                <div class="dropdown-item d-flex justify-content-between py-3" href="#">
+                    <p class="mb-0">Room</p>
+                    <div class="d-flex align-items-center">
+                        <span class="material-icons">
+                            remove
+                        </span>
+                        <p class="text-muted mb-0 mx-3">1</p>
+                        <span class="material-icons">
+                            add
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <button class="btn btn-primary rounded-sm w-100 w--mdauto mx-2 py-3 d-none d-md-block" type="submit">SEARCH</button>
+        <div class="row no-gutters d-flex d-md-none w-100">
+            <div class="col-4">
+                <p class="mb-0 text--xs text-center">
+                    Bankok
+                </p>
+            </div>
+            <div class="col-4">
+                <p class="mb-0 text--xs text-center">
+                    17 June - 19 June
+                </p>
+            </div>
+            <div class="col-4">
+                <p class="mb-0 text--xs text-center">
+                    2 adults・1 room
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<h2 class="d-block d-md-none text-center py-3 mb-0">Bangkok</h2>
+<div class="d-flex d-md-none">
+    <div class="w-50 py-3">
+        <button class="d-flex align-items-center justify-content-center bg-white border-0 w-100" data-toggle="modal" data-target="#exampleModal">
+            <span class="material-icons">
+                filter_list
+            </span>
+            <p class="text--sm mb-0">FILTER</p>
+        </button>
+    </div>
+    <div class="w-50 py-3">
+        <button class="d-flex align-items-center justify-content-center bg-white border-0 w-100" data-toggle="dropdown" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+            <span class="material-icons">
+                sort
+            </span>
+            <p class="text--sm mb-0">SORT</p>
+        </button>
+        <div class="dropdown-menu bg-secondary" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Recommended</a>
+            <a class="dropdown-item" href="#">Lowest Price</a>
+            <a class="dropdown-item" href="#">Best Value</a>
+            <a class="dropdown-item" href="#">Distance to City Center</a>
+        </div>
+    </div>
+</div>
+
+<!-- main -->
+<div class="container-md mb-5 mb-lg-8">
+    <div class="row">
+        <div class="col-4 d-none d-md-block">
+            <h3 class="h2 mb-4">Bangkok</h3>
+            <form class="bg-secondary p-4 rounded">
+                <h4 class="h6">Deals</h4>
+                <ul class="list-unstyled mb-5">
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Free cancellation
+                        </label>
+                    </li>
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            No prepayment
+                        </label>
+                    </li>
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Special offers
+                        </label>
+                    </li>
+                    
+                </ul>
+                <h4 class="h6">Popular filter</h4>
+                <ul class="list-unstyled mb-5">
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Breakfast included
+                        </label>
+                    </li>
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Free Wi-Fi
+                        </label>
+                    </li>
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Swimming pool
+                        </label>
+                    </li>
+                
+                </ul>
+                <!-- range -->
+                <div class="form-group border-bottom border-white pb-3">
+                    <h4 class="h6"><label for="formControlRange">Budget</label></h4>
+                    <input type="range" class="form-control-range mb-3" id="formControlRange">
+                    <div class="d-flex justify-content-between">
+                        <div class="bg-white w--45 p-1">
+                            <p class="mb-0"><small>Min price</small></p>
+                            <p class="text--sm mb-0">TWD 800</p>
+                        </div>
+                        <div class="bg-white w--45 p-1">
+                            <p class="mb-0"><small>Max price</small></p>
+                            <p class="text--sm mb-0">TWD 4,000+</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="h6">Rating</h4>
+                <ul class="list-unstyled mb-5">
+                    <li class="form-check mb-1">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md mr-1">
+                                star
+                            </span>
+                            <span class="text--sm text-muted">5.0</span>
+                        </label>
+                    </li>
+                    <li class="form-check mb-1">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md mr-1">
+                                star
+                            </span>
+                            <span class="text--sm text-muted">4.0</span>
+                        </label>
+                    </li>
+                    <li class="form-check mb-1">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md mr-1">
+                                star
+                            </span>
+                            <span class="text--sm text-muted">3.0</span>
+                        </label>
+                    </li>
+                    <li class="form-check mb-1">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                            <span class="material-icons text--md">
+                                star
+                            </span>
+                            <span class="material-icons text--md mr-1">
+                                star
+                            </span>
+                            <span class="text--sm text-muted">2.0</span>
+                        </label>
+                    </li>
+                    <li class="form-check mb-1">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                            <span class="material-icons text--md mr-1">
+                                star
+                            </span>
+                            <span class="text--sm text-muted">1.0</span>
+                        </label>
+                    </li>
+                    <li class="form-check mb-1">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            <span class="text--sm text-muted">Unrated</span>
+                        </label>
+                    </li>
+                </ul>
+                <h4 class="h6">Stay type</h4>
+                <ul class="list-unstyled mb-0">
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Hotel
+                        </label>
+                    </li>
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Apartment
+                        </label>
+                    </li>
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Unique
+                        </label>
+                    </li>
+                    <li class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Hostel
+                        </label>
+                    </li>
+                
+                </ul>
+            </form>
+        </div>
+        <div class="col-12 col-md-8">
+            <!-- menu -->
+            <ul class="list-unstyled d-none d-md-flex mb-4 mt-3 text--bold">
+                <li class="mr-4 space--nowrap">Recommended</li>
+                <li class="mr-4 space--nowrap">Lowest Price</li>
+                <li class="mr-4 space--nowrap">Best Value</li>
+                <li class="mr-4 space--nowrap">Distance to City Center</li>
+            </ul>
+            <!-- hotel -->
+            <ul class="list-unstyled mb-3 mb-md-4 mb-lg-5">
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/Rachada1.jpg" alt="Rachada1">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0"><small>Rachada, Bangkok<span class="text-muted d-none d-lg-inline">・2 km from center</span></small></p>
+                            <h4 class="mb-1 mb-lg-3 card--font"><a href="hotel.html" class="text-decoration-none text-dark">Rachada Hotel</a></h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="text-muted text--sm">4.0(283)</span>
+                            </div>
+                            <p class="text--sm mb-0">Deluxe Double Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・1 bed (Queen size)</p>
+                            <span class="badge badge-light d-none d-md-inline">Free cancellation</span>
+                            <span class="badge badge-light d-none d-md-inline">No prepayment</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">4.0(283)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <h5 class="card--font">TWD 1,980</h5>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/Phaya.jpg" alt="Phaya">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Phaya Thai, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・2.9 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">Forever Place</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="text-muted text--sm">5.0(121)</span>
+                            </div>
+                            <p class="text--sm mb-0">Standard Double Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・1 bed (Queen size)</p>
+                            <span class="badge badge-light d-none d-md-inline">Free cancellation</span>
+                            <!-- <span class="badge badge-light d-none d-md-inline">No prepayment</span> -->
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">5.0(121)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <h5 class="card--font text-muted text--sm"><del>TWD 1,980</del></h5>
+                                <h5 class="card--font">TWD <span class="text-primary">1,680</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/Bangkapi.jpg" alt="Bangkapi">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Bangkapi, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・14 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">LUV Hotel</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="text-muted text--sm">4.0(325)</span>
+                            </div>
+                            <p class="text--sm mb-0">Standard Double Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・1 bed (Queen size)</p>
+                            <span class="badge badge-light d-none d-md-inline">Free cancellation</span>
+                            <!-- <span class="badge badge-light d-none d-md-inline">No prepayment</span> -->
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">4.0(325)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <!-- <h5 class="card--font text-muted text--sm"><del>TWD 1,980</del></h5> -->
+                                <!-- <h5 class="card--font">TWD <span class="text-primary">1,680</span></h5> -->
+                                <h5 class="card--font">TWD 2,460</h5>
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/Chatuchack1.jpg" alt="Chatuchack1">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Chatuchack, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・12 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">WOW Life Hotel</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="text-muted text--sm">4.0(325)</span>
+                            </div>
+                            <p class="text--sm mb-0">Standard Double Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・1 bed (Queen size)</p>
+                            <span class="badge badge-light d-none d-md-inline">Free cancellation</span>
+                            <!-- <span class="badge badge-light d-none d-md-inline">No prepayment</span> -->
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">4.0(325)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <h5 class="card--font text-muted text--sm"><del>TWD 2,880</del></h5>
+                                <h5 class="card--font">TWD <span class="text-primary">2,240</span></h5>
+                                <!-- <h5 class="card--font">TWD 2,880</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/Chatuchack2.jpg" alt="Chatuchack2">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Chatuchack, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・8 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">WOW Life Hotel</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="text-muted text--sm">4.0(325)</span>
+                            </div>
+                            <p class="text--sm mb-0">Standard Double Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・1 bed (Queen size)</p>
+                            <span class="badge badge-light d-none d-md-inline">Free cancellation</span>
+                            <!-- <span class="badge badge-light d-none d-md-inline">No prepayment</span> -->
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">4.0(325)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <h5 class="card--font text-muted text--sm"><del>TWD 2,120</del></h5>
+                                <h5 class="card--font">TWD <span class="text-primary">1,890</span></h5>
+                                <!-- <h5 class="card--font">TWD 2,880</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/RangRak.jpg" alt="RangRak">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Rang Rak, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・4.4 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">RR Space</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="text-muted text--sm">4.0(325)</span>
+                            </div>
+                            <p class="text--sm mb-0">Deluxe Double Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・1 bed (King size)</p>
+                            <span class="badge badge-light d-none d-md-inline">Free cancellation</span>
+                            <!-- <span class="badge badge-light d-none d-md-inline">No prepayment</span> -->
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">4.0(325)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <!-- <h5 class="card--font text-muted text--sm"><del>TWD 2,120</del></h5>
+                                <h5 class="card--font">TWD <span class="text-primary">1,890</span></h5> -->
+                                <h5 class="card--font">TWD 2,090</h5>
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/Watana1.jpg" alt="Watana1">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Watana, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・6 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">Bangkok Hostel</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="text-muted text--sm">5.0(102)</span>
+                            </div>
+                            <p class="text--sm mb-0">Twin Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・2 beds (2 twins)</p>
+                            <span class="badge badge-light d-none d-md-inline">Free cancellation</span>
+                            <span class="badge badge-light d-none d-md-inline">No prepayment</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">5.0(102)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <!-- <h5 class="card--font text-muted text--sm"><del>TWD 2,120</del></h5>
+                                                                <h5 class="card--font">TWD <span class="text-primary">1,890</span></h5> -->
+                                <h5 class="card--font">TWD 880</h5>
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/Watana2.jpg" alt="Watana2">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Watana, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・6 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">Watana First Hostel</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="text-muted text--sm">3.0(608)</span>
+                            </div>
+                            <p class="text--sm mb-0">Twin Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・2 beds (2 twins)</p>
+                            <span class="badge badge-light d-none d-md-inline">Free cancellation</span>
+                            <!-- <span class="badge badge-light d-none d-md-inline">No prepayment</span> -->
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">3.0(608)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <h5 class="card--font text-muted text--sm"><del>TWD 1,280</del></h5>
+                                <h5 class="card--font">TWD <span class="text-primary">790</span></h5>
+                                <!-- <h5 class="card--font">TWD 2,090</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/DinDaeng1.jpg" alt="DinDaeng1">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Din Daeng, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・7 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">DD Space</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>'<span class="material-icons text--md">
+                                    star
+                                </span>'
+                                <span class="text-muted text--sm">4.0(138)</span>
+                            </div>
+                            <p class="text--sm mb-0">Standard Double Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・1 bed (Queen size)</p>
+                            <!-- <span class="badge badge-light d-none d-md-inline">Free cancellation</span> -->
+                            <!-- <span class="badge badge-light d-none d-md-inline">No prepayment</span> -->
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">4.0(138)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <h5 class="card--font text-muted text--sm"><del>TWD 1,700</del></h5>
+                                <h5 class="card--font">TWD <span class="text-primary">1,240</span></h5>
+                                <!-- <h5 class="card--font">TWD 2,090</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li class="d-flex border-bottom border-muted pb-0 pb-md-3 pb-lg-4 mb-md-3 mb-lg-4">
+                    <img class="card--img card--width rounded--pc d-block" src="assets/images/DinDaeng2.jpg" alt="DinDaeng2">
+                    <div class="d-flex p-2 p-lg-3 justify-content-between w-100 flex-column flex-md-row">
+                        <div>
+                            <p class="text-primary mb-0">
+                                <small>Din Daeng, Bangkok
+                                    <span class="text-muted d-none d-lg-inline">
+                                        ・7 km from center
+                                    </span>
+                                </small>
+                            </p>
+                            <h4 class="mb-1 mb-lg-3 card--font">Dininn Hotel</h4>
+                            <!-- star-phone -->
+                            <div class="align-items-center d-flex d-md-none">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>'<span class="material-icons text--md">
+                                    star
+                                </span>'
+                                <span class="text-muted text--sm">3.0(446)</span>
+                            </div>
+                            <p class="text--sm mb-0">Deluxe Twin Room</p>
+                            <p class="text-muted mb-0 mb-lg-2 text--xs">2 guests・2 beds (2 twins)</p>
+                            <!-- <span class="badge badge-light d-none d-md-inline">Free cancellation</span> -->
+                            <!-- <span class="badge badge-light d-none d-md-inline">No prepayment</span> -->
+                        </div>
+                        <div class="d-flex flex-column justify-content-between card--textwidth">
+                            <!-- star-pc -->
+                            <div class="align-items-end d-none d-md-flex flex-column flex-xl-row justify-content-end">
+                                <div>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                    <span class="material-icons text--md">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="text-muted text--sm mb-1">3.0(446)</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-muted mb-0 d-none d-md-block"><small>per night</small></p>
+                                <!-- <h5 class="card--font text-muted text--sm"><del>TWD 1,700</del></h5>
+                                <h5 class="card--font">TWD <span class="text-primary">1,240</span></h5> -->
+                                <h5 class="card--font">TWD 3,450</h5>
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+            </ul>
+            <!-- pagination -->
+            <nav aria-label="Page navigation example" class="bg-secondary rounded p-3">
+                <div class="pagination d-flex justify-content-between">
+                    <div class="page-item"><a class="btn btn-outline-primary" href="#">Previous</a></div>
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    </ul>
+                    <div class="page-item"><a class="btn btn-outline-primary" href="#">Next</a></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- subscribe -->
+<div class="bg-secondary py-4">
+    <div class="container-md">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-4 col-lg-6">
+                <h2 class="text-black text-center mb-0 d-none d-lg-block">
+                    Subscribe for Exclusive Offer
+                </h2>
+                <h2 class="text-black text-center mb-3 mb-md-0 h4 d-lg-none">
+                    Subscribe for Exclusive Offer
+                </h2>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="input-group input-group-lg w-100">
+                    <input type="text" class="form-control rounded-left-sm rounded-right-0" placeholder="Your email address"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary rounded-right-sm rounded-left-0" type="button" id="button-addon2">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex">
+                    <span class="material-icons">
+                        filter_list
+                    </span>
+                    <h5 class="modal-title h6" id="exampleModalLabel">FILTER</h5>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <form class="bg-secondary p-4 rounded">
+                    <h4 class="h6">Deals</h4>
+                    <ul class="list-unstyled mb-5">
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Free cancellation
+                            </label>
+                        </li>
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                No prepayment
+                            </label>
+                        </li>
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Special offers
+                            </label>
+                        </li>
+                
+                    </ul>
+                    <h4 class="h6">Popular filter</h4>
+                    <ul class="list-unstyled mb-5">
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Breakfast included
+                            </label>
+                        </li>
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Free Wi-Fi
+                            </label>
+                        </li>
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Swimming pool
+                            </label>
+                        </li>
+                
+                    </ul>
+                    <!-- range -->
+                    <div class="form-group border-bottom border-white pb-3">
+                        <h4 class="h6"><label for="formControlRange">Budget</label></h4>
+                        <input type="range" class="form-control-range mb-3" id="formControlRange">
+                        <div class="d-flex justify-content-between">
+                            <div class="bg-white w--45 p-1">
+                                <p class="mb-0"><small>Min price</small></p>
+                                <p class="text--sm mb-0">TWD 800</p>
+                            </div>
+                            <div class="bg-white w--45 p-1">
+                                <p class="mb-0"><small>Max price</small></p>
+                                <p class="text--sm mb-0">TWD 4,000+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="h6">Rating</h4>
+                    <ul class="list-unstyled mb-5">
+                        <li class="form-check mb-1">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md mr-1">
+                                    star
+                                </span>
+                                <span class="text--sm text-muted">5.0</span>
+                            </label>
+                        </li>
+                        <li class="form-check mb-1">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md mr-1">
+                                    star
+                                </span>
+                                <span class="text--sm text-muted">4.0</span>
+                            </label>
+                        </li>
+                        <li class="form-check mb-1">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md mr-1">
+                                    star
+                                </span>
+                                <span class="text--sm text-muted">3.0</span>
+                            </label>
+                        </li>
+                        <li class="form-check mb-1">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                                <span class="material-icons text--md">
+                                    star
+                                </span>
+                                <span class="material-icons text--md mr-1">
+                                    star
+                                </span>
+                                <span class="text--sm text-muted">2.0</span>
+                            </label>
+                        </li>
+                        <li class="form-check mb-1">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label d-flex align-items-center" for="defaultCheck1">
+                                <span class="material-icons text--md mr-1">
+                                    star
+                                </span>
+                                <span class="text--sm text-muted">1.0</span>
+                            </label>
+                        </li>
+                        <li class="form-check mb-1">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                <span class="text--sm text-muted">Unrated</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <h4 class="h6">Stay type</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Hotel
+                            </label>
+                        </li>
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Apartment
+                            </label>
+                        </li>
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Unique
+                            </label>
+                        </li>
+                        <li class="form-check">
+                            <input class="form-check-input bg-secondary" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Hostel
+                            </label>
+                        </li>
+                
+                    </ul>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+  
+  <footer class="container d-flex justify-content-center justify-content-sm-between align-items-center py-4">
+    <div class="d-flex align-items-center justify-content-between flex-column-reverse flex-sm-row">
+        <p class="text--sm text-muted mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex align-items-center mb-sm-0 mb-3">
+            <li class="text--sm text-muted px-1 ml-1">FAQs</li>
+            <li class="text--sm text-muted px-1 ml-1">Terms of use</li>
+            <li class="text--sm text-muted px-1 ml-1">Privacy policy</li>
+        </ul>
+    </div>
+    <div class="align-items-center d-none d-md-flex">
+        <div class="d-flex align-items-center">
+            <i class="material-icons">
+                language
+            </i>
+            <select name="language" id="language" class="border-0 text--sm text-muted">
+                <option value="English" selected>English</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+            </select>
+        </div>
+        <div class="d-flex align-items-center">
+            <i class="material-icons">
+                attach_money
+            </i>
+            <select name="currency" id="currency" class="border-0 text--sm text-muted">
+                <option value="TWD" selected>TWD</option>
+                <option value="USD">USD</option>
+                <option value="JPY">JPY</option>
+            </select>
+        </div>
+    </div>
+</footer>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  
+</body>
+
+</html>

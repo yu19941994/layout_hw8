@@ -1,0 +1,45 @@
+.carousel--lg{
+    height: 247px;
+    width: 100%;
+    object-fit: cover;
+    @include media-breakpoint-up(md) { 
+       height: 268px;
+    }
+    @include media-breakpoint-up(lg) { 
+       height: 434px;
+    }
+}
+
+.carousel--md{
+    height: 132px;
+    width: 100%;
+    object-fit: cover;
+    @include media-breakpoint-up(lg) { 
+       height: 213px;
+    }
+}
+
+.carousel--sm{
+    height: 132px;
+    width: 40%;
+    object-fit: cover;
+    @include media-breakpoint-up(lg) { 
+       height: 213px;
+    }
+}
+
+.carousel--xs{
+    height: 93px;
+    // width: 60%;
+    object-fit: cover;
+    @include media-breakpoint-up(lg) { 
+       height: 151px;
+    }
+}
+
+.carousel--text{
+    font-size: 13px;
+    @include media-breakpoint-up(lg) { 
+       font-size: 16px;
+    }
+}

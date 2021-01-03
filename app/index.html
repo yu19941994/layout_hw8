@@ -1,0 +1,405 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- banner -->
+<div class="banner position-relative mt-8">
+  <h2 class="text--xl text-white position-absolute banner--text text-center">
+    Discover your ideal hotel
+  </h2>
+  
+  <!-- Swiper -->
+  <div class="swiper-container swiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="banner--mask position-absolute w-100 h-100 bg-dark"></div>
+        <img src="assets/images/index-banner1.jpg" class="swiper--img">
+      </div>
+      <div class="swiper-slide">
+        <div class="banner--mask position-absolute w-100 h-100 bg-dark"></div>
+        <img src="assets/images/index-banner2.jpg" class="swiper--img">
+      </div>
+      <div class="swiper-slide">
+        <div class="banner--mask position-absolute w-100 h-100 bg-dark"></div>
+        <img src="assets/images/index-banner3.jpg" class="swiper--img">
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-next1"></div>
+    <div class="swiper-button-prev swiper-button-prev1"></div>
+  </div>
+
+</div>
+
+<!-- search -->
+<div class="container my--search mb-5 mb-md-7">
+  <div class="row no-gutters justify-content-center">
+    <div class="col col-sm-10">
+      <form class="bg-secondary p-4 rounded">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+          <div class="dropdown mb-3 mb-lg-0 w-100 mx-2">
+            <button class="btn btn-white rounded-sm d-flex w-100 p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="material-icons mr-4">location_on</span>
+              <span class="text-muted">Destination</span>
+            </button>
+            <div class="dropdown-menu rounded-0 w-100" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-item d-flex" href="#">
+                <span class="material-icons mr-2">
+                  star
+                </span>
+                <div class="d-flex flex-column">
+                  <p class="mb-0">Bankok</p>
+                  <p class="text-muted mb-0"><small>Thailand</small></p>
+                </div>
+              </div>
+              <div class="dropdown-item d-flex" href="#">
+                <span class="material-icons mr-2">
+                  star
+                </span>
+                <div class="d-flex flex-column">
+                  <p class="mb-0">Osaka</p>
+                  <p class="text-muted mb-0"><small>Japan</small></p>
+                </div>
+              </div>
+              <div class="dropdown-item d-flex" href="#">
+                <span class="material-icons mr-2">
+                  star
+                </span>
+                <div class="d-flex flex-column">
+                  <p class="mb-0">Roma</p>
+                  <p class="text-muted mb-0"><small>Italy</small></p>
+                </div>
+              </div>
+              <div class="dropdown-item d-flex" href="#">
+                <span class="material-icons mr-2">
+                  star
+                </span>
+                <div class="d-flex flex-column">
+                  <p class="mb-0">Paris</p>
+                  <p class="text-muted mb-0"><small>London</small></p>
+                </div>
+              </div>
+              <div class="dropdown-item d-flex" href="#">
+                <span class="material-icons mr-2">
+                  star
+                </span>
+                <div class="d-flex flex-column">
+                  <p class="mb-0">Reykjavik</p>
+                  <p class="text-muted mb-0"><small>Iceland</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="datepick" class="position-relative w-100 mb-3 mb-lg-0 mx-2">
+            <input type="text" class="rounded-sm btn btn-white p-3 w-100" id="datepick">
+            <span class="datepicker__icon material-icons mr-4 position-absolute left-0">date_range</span>
+           
+          </label>
+          <div class="dropdown mb-3 mb-lg-0 w-100 mx-2">
+            <button class="btn btn-white rounded-sm d-flex w-100 p-3" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="material-icons mr-4">person</span>
+              <span class="text-muted">Guests</span>
+            </button>
+            <div class="dropdown-menu rounded-0 w-100" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-item d-flex justify-content-between py-3" href="#">
+                <p class="mb-0">Adult</p>
+                <div class="d-flex align-items-center">
+                  <span class="material-icons">
+                    remove
+                  </span>
+                  <p class="text-muted mb-0 mx-3">2</p>
+                  <span class="material-icons">
+                    add
+                  </span>
+                </div>
+              </div>
+              <div class="dropdown-item d-flex justify-content-between py-3" href="#">
+                <p class="mb-0">Child</p>
+                <div class="d-flex align-items-center">
+                  <span class="material-icons">
+                    remove
+                  </span>
+                  <p class="text-muted mb-0 mx-3">0</p>
+                  <span class="material-icons">
+                    add
+                  </span>
+                </div>
+              </div>
+              <div class="dropdown-item d-flex justify-content-between py-3" href="#">
+                <p class="mb-0">Room</p>
+                <div class="d-flex align-items-center">
+                  <span class="material-icons">
+                    remove
+                  </span>
+                  <p class="text-muted mb-0 mx-3">1</p>
+                  <span class="material-icons">
+                    add
+                  </span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <button class="btn btn-primary rounded-sm w-100 w--lgauto mx-2 py-3" type="submit">SEARCH</button>
+         
+        </div>
+
+        
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Top Choices  -->
+  <h3 class="h2 mb-4">Top Choices</h3>
+  <ul class="nav nav-tabs border-0 mb-4 list-unstyled" id="myTab" role="tablist">
+    <li class="nav-item border-bottom border-muted" role="presentation">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#bali" role="tab" aria-controls="bali"
+        aria-selected="true">Bali</a>
+    </li>
+    <li class="nav-item border-bottom border-muted"" role="presentation">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#okinawa" role="tab" aria-controls="okinawa"
+        aria-selected="false">Okinawa</a>
+    </li>
+    <li class="nav-item border-bottom border-muted"" role="presentation">
+      <a class="nav-link" id="taipei-tab" data-toggle="tab" href="#taipei" role="tab" aria-controls="taipei"
+        aria-selected="false">Taipei</a>
+    </li>
+  </ul>
+  <div class="tab-content mb-5 mb-md-8" id="myTabContent">
+    <div class="tab-pane fade show active" id="bali" role="tabpanel" aria-labelledby="bali-tab">
+      <!-- Swiper -->
+      <div class="swiper-container swiper2">
+        <div class="px-0 d-flex swiper-wrapper">
+          <div class="swiper-slide card border-0" style="width: 18rem;">
+            <img src="assets/images/top1.jpg" class="card-img-top card--img rounded">
+            <div class="card-body px-0 py-2">
+              <h4 class="card-title h6 mb-2">Hotel Aqua</h4>
+              <div class="d-flex align-items-center mb-2">
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <p class="card-text text--sm text-muted-light">5.0<span>・2k reviews</span></p>
+              </div>
+              <p class="card-text text--sm text-muted-light">TWD 2,480 <span><small><del>TWD 3,980</del></small></span></p>
+        
+            </div>
+          </div>
+          <div class="swiper-slide card border-0" style="width: 18rem;">
+            <img src="assets/images/top2.jpg" class="card-img-top card--img rounded">
+            <div class="card-body px-0 py-2">
+              <h4 class="card-title h6 mb-2">Mr. Kawasaki Inn</h4>
+              <div class="d-flex align-items-center mb-2">
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <p class="card-text text--sm text-muted-light">4.0<span>・500 reviews</span></p>
+              </div>
+              <p class="card-text text--sm text-muted-light">TWD 3,380</p>
+        
+            </div>
+          </div>
+          <div class="swiper-slide card border-0" style="width: 18rem;">
+            <img src="assets/images/top3.jpg" class="card-img-top card--img rounded">
+            <div class="card-body px-0 py-2">
+              <h4 class="card-title h6 mb-2">Weekly Paradise</h4>
+              <div class="d-flex align-items-center mb-2">
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <p class="card-text text--sm text-muted-light">4.0<span>・470 reviews</span></p>
+              </div>
+              <p class="card-text text--sm text-muted-light">TWD 4,780</p>
+        
+            </div>
+          </div>
+          <div class="swiper-slide card border-0" style="width: 18rem;">
+            <img src="assets/images/top4.jpg" class="card-img-top card--img rounded">
+            <div class="card-body px-0 py-2">
+              <h4 class="card-title h6 mb-2">Beast Hotel</h4>
+              <div class="d-flex align-items-center mb-2">
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <i class="material-icons text--md">
+                  star
+                </i>
+                <p class="card-text text--sm text-muted-light">4.0<span>・283 reviews</span></p>
+              </div>
+              <p class="card-text text--sm text-muted-light">TWD 1,980</p>
+        
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-next2"></div>
+      </div>
+      
+   
+    </div>
+    <div class="tab-pane fade" id="okinawa" role="tabpanel" aria-labelledby="okinawa-tab">...</div>
+    <div class="tab-pane fade" id="taipei" role="tabpanel" aria-labelledby="taipei-tab">...</div>
+  </div>
+  <!-- Popular Destinations -->
+  <h3 class="h2 mb-5 mb-md-8">Popular Destinations</h3>
+  <ul class="row list-unstyled">
+    <li class="col-12 col-sm-6 col-md-4 mb-2 mb-sm-4">
+      <div class="card bg-dark text-white border-0">
+        <img src="assets/images/Osaka.jpg" class="card-img card--height">
+        <div class="card-img-overlay py-3">
+          <p class="text-muted-light mb-0"><small>JAPAN</small></p>
+          <h5 class="card-title h4 mb-0"><a href="#" class="text-decoration-none text-white">Osaka</a></h5>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-sm-6 col-md-4 mb-2 mb-sm-4">
+      <div class="card bg-dark text-white border-0">
+        <img src="assets/images/Kyoto.jpg" class="card-img card--height">
+        <div class="card-img-overlay py-3">
+          <p class="text-muted-light mb-0"><small>JAPAN</small></p>
+          <h5 class="card-title h4 mb-0"><a href="#" class="text-decoration-none text-white">Kyoto</a></h5>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-sm-6 col-md-4 mb-2 mb-sm-4">
+      <div class="card bg-dark text-white border-0">
+        <img src="assets/images/Reykjavic.jpg" class="card-img card--height">
+        <div class="card-img-overlay py-3">
+          <p class="text-muted-light mb-0"><small>iceland</small></p>
+          <h5 class="card-title h4 mb-0"><a href="#" class="text-decoration-none text-white">eykjavík</a></h5>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-sm-6 col-md-4 mb-2 mb-sm-4">
+      <div class="card bg-dark text-white border-0">
+        <img src="assets/images/Paris.jpg" class="card-img card--height">
+        <div class="card-img-overlay py-3">
+          <p class="text-muted-light mb-0"><small>France</small></p>
+          <h5 class="card-title h4 mb-0"><a href="#" class="text-decoration-none text-white">Paris</a></h5>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-sm-6 col-md-4 mb-2 mb-sm-4">
+      <div class="card bg-dark text-white border-0">
+        <img src="assets/images/Roman.jpg" class="card-img card--height">
+        <div class="card-img-overlay py-3">
+          <p class="text-muted-light mb-0"><small>Italy</small></p>
+          <h5 class="card-title h4 mb-0"><a href="#" class="text-decoration-none text-white">Roma</a></h5>
+        </div>
+      </div>
+    </li>
+    <li class="col-12 col-sm-6 col-md-4 mb-2 mb-sm-4">
+      <div class="card bg-dark text-white border-0">
+        <img src="assets/images/Bangkok.jpg" class="card-img card--height">
+        <div class="card-img-overlay py-3">
+          <p class="text-muted-light mb-0"><small>Thailand</small></p>
+          <h5 class="card-title h4 mb-0"><a href="country.html" class="text-decoration-none text-white">Bangkok</a></h5>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <!-- Get Inspiration -->
+  <div class="d-flex justify-content-between mb-5 mb-md-8">
+    <h3 class="h2 mb-0">Get Inspiration</h3>
+    <div class="btn btn-outline-primary">SEE MORE</div>
+  </div>
+  <div class="swiper-container swiper3">
+    <ul class="list-unstyled d-flex swiper-wrapper">
+      <li class="card border-0 swiper-slide">
+        <img class="card-img-top rounded card--largeimg" src="assets/images/italy.jpg" alt="italy">
+        <div class="card-body">
+          <h5 class="card-title h4">The fifth most visited country</h5>
+          <p class="card-text text-muted">
+            Italy is the fifth most visited country in the world, with a total of 52.3 million…
+          </p>
+    
+        </div>
+      </li>
+      <li class="card border-0 swiper-slide">
+        <img class="card-img-top rounded card--largeimg" src="assets/images/Thailand.jpg" alt="italy">
+        <div class="card-body">
+          <h5 class="card-title h4">Visit Thailand for Bangkok</h5>
+          <p class="card-text text-muted">
+            Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…
+          </p>
+    
+        </div>
+      </li>
+      <li class="card border-0 swiper-slide">
+        <img class="card-img-top rounded card--largeimg" src="assets/images/NewZealand.jpg" alt="italy">
+        <div class="card-body">
+          <h5 class="card-title h4">Lord of the Rings Tour</h5>
+          <p class="card-text text-muted">
+            The national cuisine has been described as Pacific Rim, incorporating the native Māori…
+          </p>
+    
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+
+</div>
+
+<!-- subscribe -->
+<div class="bg-secondary py-md-9 py-4">
+  <div class="container">
+    <h2 class="text--xl text-black text-center mb-4">
+      Subscribe for Exclusive Offer
+    </h2>
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-md-10 col-lg-6">
+        <div class="input-group input-group-lg w-100">
+          <input type="text" class="form-control rounded-left-sm rounded-right-0" placeholder="Your email address" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary rounded-right-sm rounded-left-0" type="button" id="button-addon2">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

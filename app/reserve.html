@@ -1,0 +1,196 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- Total in phone -->
+<div class="mt-8 bg-secondary py-3 py-md-4 mb-3 mb-md-4 d-md-none">
+    <div class="container-md d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+            <p class="text--sm text-muted mb-0 mr-2">Total</p>
+            <p class="text--sm mb-0">TWD 4,633</p>
+        </div>
+        <a class="d-flex text-decoration-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            <p class="text--sm text-primary mb-0">DETAIL</p>
+            <span class="material-icons">
+                expand_more
+            </span>
+        </a>
+    </div>
+    <div class="collapse" id="collapseExample">
+        <div class="bg-secondary pt-4 rounded-sm">
+            <table class="table table-borderless mb-4">
+                <thead>
+                    <tr>
+                        <th scope="col" class="pt-0 pb-3">Booking details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="py-1">
+                            <p class="mb-0 text-muted text--sm">17 June 2020 - 19 June 2020・2 nights</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="py-1">
+                            <p class="mb-0 text-muted text--sm">2 adults・1 room</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="py-1">
+                            <p class="mb-0 text-muted text--sm">Rachada Hotel</p>
+                        </th>
+                    </tr>
+        
+                </tbody>
+            </table>
+            <hr class="border-white">
+            <table class="table table-borderless mb-4">
+                <thead>
+                    <tr>
+                        <th scope="col" class="pt-0 pb-3">Price summary</th>
+                        <th scope="col" class="pt-0 pb-3"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="py-1">
+                            <p class="mb-0 text-muted text--sm">Deluxe Suite with Pool</p>
+                        </th>
+                        <td class="py-1">
+                            <p class="mb-0 text-muted text--sm">TWD 3,960</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="py-1">
+                            <p class="mb-0 text-muted text--sm">VAT (7%)</p>
+                        </th>
+                        <td class="py-1">
+                            <p class="mb-0 text-muted text--sm">TWD 277</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="py-1">
+                            <p class="mb-0 text-muted text--sm">Property service charge</p>
+                        </th>
+                        <td class="py-1">
+                            <p class="mb-0 text-muted text--sm">TWD 396</p>
+                        </td>
+                    </tr>
+        
+                </tbody>
+            </table>
+            <hr class="border-white">
+            <table class="table table-borderless mb-4">
+                <thead>
+                    <tr>
+                        <th scope="col" class="py-0 text-muted">Total</th>
+                        <th scope="col" class="py-0 text-right">TWD 4,633</th>
+                    </tr>
+                </thead>
+        
+            </table>
+        </div>
+    </div>
+
+</div>
+<div class="mt-md-9 container-sm mb-5 mb-sm-11">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+            <h2 class="mb-4">Reservation details</h2>
+            <form>
+                <div class="form-group mb-4">
+                    <label for="name" class="text-muted">Name</label>
+                    <input type="text" class="form-control rounded-sm input--height" id="name" aria-describedby="nameHelp">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="email" class="text-muted">Email</label>
+                    <input type="email" class="form-control rounded-sm input--height" id="email" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="phone" class="text-muted">Phone（optional）</label>
+                    <input type="number" class="form-control rounded-sm input--height" id="phone">
+                </div>
+                <button type="submit" class="btn btn-primary rounded-sm w-100 py-3 mb-2"><a href="received.html" class="text-decoration-none text-white">RESERVE</a></button>
+                <p class="text--sm text-primary text-center">Reserve now, pay at stay</p>
+            </form>
+        </div>
+        <div class="col-md-6 col-lg-4 d-none d-md-block">
+            <div class="bg-muted-lightest p-4 rounded-sm">
+                <table class="table table-borderless mb-4">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="pt-0 pb-3">Booking details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="py-1">
+                                <p class="mb-0 text-muted text--sm">17 June 2020 - 19 June 2020・2 nights</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-1">
+                                <p class="mb-0 text-muted text--sm">2 adults・1 room</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-1">
+                                <p class="mb-0 text-muted text--sm">Rachada Hotel</p>
+                            </th>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+                <hr class="border-white">
+                <table class="table table-borderless mb-4">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="pt-0 pb-3">Price summary</th>
+                            <th scope="col" class="pt-0 pb-3"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="py-1">
+                                <p class="mb-0 text-muted text--sm">Deluxe Suite with Pool</p>
+                            </th>
+                            <td class="py-1">
+                                <p class="mb-0 text-muted text--sm">TWD 3,960</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-1">
+                                <p class="mb-0 text-muted text--sm">VAT (7%)</p>
+                            </th>
+                            <td class="py-1">
+                                <p class="mb-0 text-muted text--sm">TWD 277</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-1">
+                                <p class="mb-0 text-muted text--sm">Property service charge</p>
+                            </th>
+                            <td class="py-1">
+                                <p class="mb-0 text-muted text--sm">TWD 396</p>
+                            </td>
+                        </tr>
+                
+                    </tbody>
+                </table>
+                <hr class="border-white">
+                <table class="table table-borderless mb-4">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="py-0 text-muted">Total</th>
+                            <th scope="col" class="py-0 text-right">TWD 4,633</th>
+                        </tr>
+                    </thead>
+                  
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+.w--lgauto{
+    @include media-breakpoint-up(lg) { 
+       width: auto!important;
+    }
+}
+
+.w--mdauto{
+    @include media-breakpoint-up(md) { 
+       width: auto!important;
+    }
+}
+
+.w--45{
+    width: 45%;
+}
+
+.w--login{
+    width: 100%;
+    @include media-breakpoint-up(lg) { 
+       width: 35.81%;
+    }
+}
+
+.w--37{
+    width: 37.5%;
+}
+
+.w--55{
+    width: 55%;
+}
+
+.w--64{
+    width: 64.29%;
+}
+
+.rounded--pc{
+    border-radius: 0px;
+    @include media-breakpoint-up(md) { 
+       border-top-left-radius: 8px;
+       border-bottom-left-radius: 8px;
+    }
+}
+
+.rounded--toppc{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    @include media-breakpoint-up(sm) { 
+        border-top-right-radius: 0px;
+       border-bottom-left-radius: 8px;
+    }
+}
+
+.rounded--bottompc{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    @include media-breakpoint-up(sm) { 
+       border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+.space--nowrap{
+    white-space: nowrap;
+}
+
+.bottom--tag{
+    bottom: 24px;
+}
+
+.bottom--tagmiddle{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg--transform{
+    background-color: $secondary;
+    @include media-breakpoint-up(sm) { 
+       background-color: #fff;
+    }
+}
+
+.profile--areawidth{
+    width: auto;
+    @include media-breakpoint-up(sm) { 
+       width: 50%;
+    }
+    @include media-breakpoint-up(lg) { 
+       width: auto;
+    }
+}
+
+.position--search{
+    bottom: 15px;
+    left: 50px;
+}
