@@ -101,3 +101,11 @@
 .hover--effect:hover{
     background-color: $muted-lighter;
 }
+
+
+.hover--effectlight{
+    background-color: $black;
+    &:hover{
+        background-color: $muted-light;
+    }
+}

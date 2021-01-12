@@ -136,8 +136,9 @@ current: index
     </div>
 
 </div>
-<!-- carousel -->
+<!-- main -->
 <div class="container-md mb-5 mb-lg-8">
+    <!-- carousel -->
     <div class="row mb-3 mb-sm-4">
         <div class="col-12 col-sm-7">
             <div class="carousel__item--active">
@@ -151,8 +152,8 @@ current: index
                     <img src="assets/images/Rachada3.jpg" alt="carousel3" class="carousel--sm">
                     <div class="w--55 d-flex flex-column">
                         <img src="assets/images/Rachada4.jpg" alt="carousel4" class="carousel--xs w-100 mb-1 mb-lg-2">
-                        <div class="bg-black py-2 py-lg-3">
-                            <p class="mb-0 text-white text-center carousel--text">SEE ALL 10 PHOTOS</p>
+                        <div class="py-2 py-lg-3 hover--effectlight">
+                            <a class="mb-0 text-white text-center carousel--text text-decoration-none d-block" href="#">SEE ALL 10 PHOTOS</a>
                         </div>
                     </div>
                 </div>
@@ -190,18 +191,18 @@ current: index
     </div>
     <!-- select your room -->
     <h3 class="h4 mb-3 mb-sm-4">Select your room</h3>
-    <div class="d-md-flex align-items-center d-none mb-5">
-        <div class="bg-muted-lightest py-2 px-3 mr-2">
+    <ul class="list-unstyled d-md-flex align-items-center d-none mb-5">
+        <li class="bg-muted-lightest py-2 px-3 mr-2">
             <p class="text--sm text-muted mb-0">Bangkok, Thailand</p>
-        </div>
-        <div class="bg-muted-lightest py-2 px-3 text-muted mr-2">
+        </li>
+        <li class="bg-muted-lightest py-2 px-3 text-muted mr-2">
             <p class="text--sm text-muted mb-0">17 June - 19 June・2 nights</p>
-        </div>
-        <div class="bg-muted-lightest py-2 px-3 text-muted mr-4">
+        </li>
+        <li class="bg-muted-lightest py-2 px-3 text-muted mr-4">
             <p class="text--sm text-muted mb-0">2 adults・1 room</p>
-        </div>
-        <p class="text-primary mb-0">EDIT DETAIL</p>
-    </div>
+        </li>
+       <li><a class="text-primary mb-0 d-block hover--effect">EDIT DETAIL</a></li>
+    </ul>
     <!-- table -->
     <table class="table d-none d-sm-table">
         <thead>
@@ -710,7 +711,7 @@ current: index
     </div>
 </div>
 
-<!-- coursel -->
+<!-- collapse -->
 <div class="bg-black rounded-top rounded-sm collapse position-absolute w-100 py-4" id="collapse">
     <div class="container-md">
         <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row">
@@ -719,7 +720,7 @@ current: index
                 <p class="h4 text-white mb-0">TWD 3,960</p>
             </div>
             <div class="mb-4 mb-sm-0">
-                <button class="btn btn-outline-light rounded-sm py-3 px-4 px-sm-5 mr-2">CANCEL</button>
+                <button class="btn btn-outline-light rounded-sm py-3 px-4 px-sm-5 mr-2" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapseExample">CANCEL</button>
                 <button class="btn btn-primary rounded-sm py-3 px-4 px-sm-5"><a href="reserve.html" class="text-decoration-none text-white">RESERVE</a></button>
             </div>
         </div>
