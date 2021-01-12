@@ -10,29 +10,3 @@ p{
     overflow: hidden;
 }
 
-.text--xs{
-    font-size: 12px !important;
-}
-
-.text--sm{
-    font-size: 14px !important;
-}
-
-.text--md{
-    font-size: 18px !important;
-}
-
-.text--xl{
-    font-size: 32px;
-    @include media-breakpoint-up(sm) { 
-        font-size: 48px;
-    }
-}
-
-.text--mxl{
-   font-size: 32px !important; 
-}
-
-.text--bold{
-    font-size: bold;
-}
