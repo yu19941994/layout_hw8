@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
-  <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -14,6 +13,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
@@ -71,77 +71,46 @@
     </div>
     <div class="collapse" id="collapseExample">
         <div class="bg-secondary pt-4 rounded-sm">
-            <table class="table table-borderless mb-4">
-                <thead>
-                    <tr>
-                        <th scope="col" class="pt-0 pb-3">Booking details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <p class="mb-0 text-muted text--sm">17 June 2020 - 19 June 2020・2 nights</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <p class="mb-0 text-muted text--sm">2 adults・1 room</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <p class="mb-0 text-muted text--sm">Rachada Hotel</p>
-                        </th>
-                    </tr>
-        
-                </tbody>
-            </table>
+            <div class="mb-4">
+                <h3 class="mb-3">Booking details</h3>
+                <ul class="list-inline">
+                    <li class="py-1">
+                        <p class="mb-0 text-muted text--sm">17 June 2020 - 19 June 2020・2 nights</p>
+                    </li>
+                    <li class="py-1">
+                        <p class="mb-0 text-muted text--sm">2 adults・1 room</p>
+                    </li>
+                    <li class="py-1">
+                        <p class="mb-0 text-muted text--sm">Rachada Hotel</p>
+                    </li>   
+                </ul>
+            </div>
             <hr class="border-white">
-            <table class="table table-borderless mb-4">
-                <thead>
-                    <tr>
-                        <th scope="col" class="pt-0 pb-3">Price summary</th>
-                        <th scope="col" class="pt-0 pb-3"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <p class="mb-0 text-muted text--sm">Deluxe Suite with Pool</p>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted text--sm">TWD 3,960</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <p class="mb-0 text-muted text--sm">VAT (7%)</p>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted text--sm">TWD 277</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <p class="mb-0 text-muted text--sm">Property service charge</p>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted text--sm">TWD 396</p>
-                        </td>
-                    </tr>
-        
-                </tbody>
-            </table>
+            <div class="mb-4">
+                <h3 class="mb-3">Price summary</h3>
+                <ul class="list-inline">
+                    <li class="py-1 d-flex justify-content-between">
+                        <p class="mb-0 text-muted text--sm">Deluxe Suite with Pool</p>
+                        <p class="mb-0 text-muted text--sm">TWD 3,960</p>
+                    </li>
+                    <li class="py-1 d-flex justify-content-between">
+                        <p class="mb-0 text-muted text--sm">VAT (7%)</p>
+                        <p class="mb-0 text-muted text--sm">TWD 277</p>
+                    </li>
+                    <li class="py-1 d-flex justify-content-between">
+                        <p class="mb-0 text-muted text--sm">Property service charge</p>
+                        <p class="mb-0 text-muted text--sm">TWD 396</p>
+                    </li>
+                </ul>
+            </div>
             <hr class="border-white">
-            <table class="table table-borderless mb-4">
-                <thead>
-                    <tr>
-                        <th scope="col" class="py-0 text-muted">Total</th>
-                        <th scope="col" class="py-0 text-right">TWD 4,633</th>
-                    </tr>
-                </thead>
-        
-            </table>
+            <div class="mb-4">
+                <h3 class="mb-3">Price summary</h3>
+                <div class="d-flex justify-content-between">
+                    <p class="mb-0 text-muted">Total</p>
+                    <p class="mb-0">TWD 4,633</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -161,7 +130,7 @@
                 </div>
                 <div class="form-group mb-4">
                     <label for="phone" class="text-muted">Phone（optional）</label>
-                    <input type="number" class="form-control rounded-sm input--height" id="phone">
+                    <input type="tel" class="form-control rounded-sm input--height" id="phone">
                 </div>
                 <button type="submit" class="btn btn-primary rounded-sm w-100 py-3 mb-2"><a href="received.html" class="text-decoration-none text-white">RESERVE</a></button>
                 <p class="text--sm text-primary text-center">Reserve now, pay at stay</p>
@@ -250,9 +219,9 @@
     <div class="d-flex align-items-center justify-content-between flex-column-reverse flex-sm-row">
         <p class="text--sm text-muted mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex align-items-center mb-sm-0 mb-3">
-            <li class="text--sm text-muted px-1 ml-1">FAQs</li>
-            <li class="text--sm text-muted px-1 ml-1">Terms of use</li>
-            <li class="text--sm text-muted px-1 ml-1">Privacy policy</li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">FAQs</a></li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">Terms of use</a></li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">Privacy policy</a></li>
         </ul>
     </div>
     <div class="align-items-center d-none d-md-flex">
@@ -260,7 +229,7 @@
             <i class="material-icons">
                 language
             </i>
-            <select name="language" id="language" class="border-0 text--sm text-muted">
+            <select name="language" id="language" class="border-0 text--sm text-muted cursor--pointer">
                 <option value="English" selected>English</option>
                 <option value="Chinese">Chinese</option>
                 <option value="Japanese">Japanese</option>
@@ -270,7 +239,7 @@
             <i class="material-icons">
                 attach_money
             </i>
-            <select name="currency" id="currency" class="border-0 text--sm text-muted">
+            <select name="currency" id="currency" class="border-0 text--sm text-muted cursor--pointer">
                 <option value="TWD" selected>TWD</option>
                 <option value="USD">USD</option>
                 <option value="JPY">JPY</option>

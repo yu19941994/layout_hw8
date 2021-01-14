@@ -61,6 +61,10 @@ var swiper3 = new Swiper('.swiper3', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next3',
+    prevEl: '.swiper-button-prev3'
   }
 });
 $(document).ready(function () {

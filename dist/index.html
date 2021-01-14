@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
-  <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -14,6 +13,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
@@ -230,7 +230,7 @@
           <div class="swiper-slide card border-0" style="width: 18rem;">
             <img src="assets/images/top1.jpg" class="card-img-top card--img rounded">
             <div class="card-body px-0 py-2">
-              <h4 class="card-title h6 mb-2">Hotel Aqua</h4>
+              <h4 class="card-title h6 mb-2"><a href="#" class="text-decoration text-black">Hotel Aqua</a></h4>
               <div class="d-flex align-items-center mb-2">
                 <i class="material-icons text--md">
                   star
@@ -256,7 +256,7 @@
           <div class="swiper-slide card border-0" style="width: 18rem;">
             <img src="assets/images/top2.jpg" class="card-img-top card--img rounded">
             <div class="card-body px-0 py-2">
-              <h4 class="card-title h6 mb-2">Mr. Kawasaki Inn</h4>
+              <h4 class="card-title h6 mb-2"><a href="#" class="text-decoration text-black">Mr. Kawasaki Inn</a></h4>
               <div class="d-flex align-items-center mb-2">
                 <i class="material-icons text--md">
                   star
@@ -279,7 +279,7 @@
           <div class="swiper-slide card border-0" style="width: 18rem;">
             <img src="assets/images/top3.jpg" class="card-img-top card--img rounded">
             <div class="card-body px-0 py-2">
-              <h4 class="card-title h6 mb-2">Weekly Paradise</h4>
+              <h4 class="card-title h6 mb-2"><a href="#" class="text-decoration text-black">Weekly Paradise</a></h4>
               <div class="d-flex align-items-center mb-2">
                 <i class="material-icons text--md">
                   star
@@ -302,7 +302,7 @@
           <div class="swiper-slide card border-0" style="width: 18rem;">
             <img src="assets/images/top4.jpg" class="card-img-top card--img rounded">
             <div class="card-body px-0 py-2">
-              <h4 class="card-title h6 mb-2">Beast Hotel</h4>
+              <h4 class="card-title h6 mb-2"><a href="#" class="text-decoration text-black">Beast Hotel</a></h4>
               <div class="d-flex align-items-center mb-2">
                 <i class="material-icons text--md">
                   star
@@ -400,7 +400,7 @@
       <li class="card border-0 swiper-slide">
         <img class="card-img-top rounded card--largeimg" src="assets/images/italy.jpg" alt="italy">
         <div class="card-body">
-          <h5 class="card-title h4">The fifth most visited country</h5>
+          <h5 class="card-title h4"><a href="#" class="text-decoration-none text-black">The fifth most visited country</a></h5>
           <p class="card-text text-muted">
             Italy is the fifth most visited country in the world, with a total of 52.3 million…
           </p>
@@ -410,7 +410,7 @@
       <li class="card border-0 swiper-slide">
         <img class="card-img-top rounded card--largeimg" src="assets/images/Thailand.jpg" alt="italy">
         <div class="card-body">
-          <h5 class="card-title h4">Visit Thailand for Bangkok</h5>
+          <h5 class="card-title h4"><a href="#" class="text-decoration-none text-black">Visit Thailand for Bangkok</a></h5>
           <p class="card-text text-muted">
             Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…
           </p>
@@ -420,7 +420,7 @@
       <li class="card border-0 swiper-slide">
         <img class="card-img-top rounded card--largeimg" src="assets/images/NewZealand.jpg" alt="italy">
         <div class="card-body">
-          <h5 class="card-title h4">Lord of the Rings Tour</h5>
+          <h5 class="card-title h4"><a href="#" class="text-decoration-none text-black">Lord of the Rings Tour</a></h5>
           <p class="card-text text-muted">
             The national cuisine has been described as Pacific Rim, incorporating the native Māori…
           </p>
@@ -428,6 +428,9 @@
         </div>
       </li>
     </ul>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-next3"></div>
+    <div class="swiper-button-prev swiper-button-prev3"></div>
   </div>
   
 
@@ -442,7 +445,8 @@
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-10 col-lg-6">
         <div class="input-group input-group-lg w-100">
-          <input type="text" class="form-control rounded-left-sm rounded-right-0" placeholder="Your email address" aria-label="Recipient's username"
+          <label for="subscribe"></label>
+          <input type="email" id="subscribe" class="form-control rounded-left-sm rounded-right-0" placeholder="Your email address" aria-label="Recipient's username"
             aria-describedby="button-addon2">
           <div class="input-group-append">
             <button class="btn btn-primary rounded-right-sm rounded-left-0" type="button" id="button-addon2">SUBSCRIBE</button>
@@ -459,9 +463,9 @@
     <div class="d-flex align-items-center justify-content-between flex-column-reverse flex-sm-row">
         <p class="text--sm text-muted mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex align-items-center mb-sm-0 mb-3">
-            <li class="text--sm text-muted px-1 ml-1">FAQs</li>
-            <li class="text--sm text-muted px-1 ml-1">Terms of use</li>
-            <li class="text--sm text-muted px-1 ml-1">Privacy policy</li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">FAQs</a></li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">Terms of use</a></li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">Privacy policy</a></li>
         </ul>
     </div>
     <div class="align-items-center d-none d-md-flex">
@@ -469,7 +473,7 @@
             <i class="material-icons">
                 language
             </i>
-            <select name="language" id="language" class="border-0 text--sm text-muted">
+            <select name="language" id="language" class="border-0 text--sm text-muted cursor--pointer">
                 <option value="English" selected>English</option>
                 <option value="Chinese">Chinese</option>
                 <option value="Japanese">Japanese</option>
@@ -479,7 +483,7 @@
             <i class="material-icons">
                 attach_money
             </i>
-            <select name="currency" id="currency" class="border-0 text--sm text-muted">
+            <select name="currency" id="currency" class="border-0 text--sm text-muted cursor--pointer">
                 <option value="TWD" selected>TWD</option>
                 <option value="USD">USD</option>
                 <option value="JPY">JPY</option>

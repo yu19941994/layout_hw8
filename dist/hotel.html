@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
-  <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -14,6 +13,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
@@ -186,8 +186,9 @@
     </div>
 
 </div>
-<!-- carousel -->
+<!-- main -->
 <div class="container-md mb-5 mb-lg-8">
+    <!-- carousel -->
     <div class="row mb-3 mb-sm-4">
         <div class="col-12 col-sm-7">
             <div class="carousel__item--active">
@@ -201,8 +202,8 @@
                     <img src="assets/images/Rachada3.jpg" alt="carousel3" class="carousel--sm">
                     <div class="w--55 d-flex flex-column">
                         <img src="assets/images/Rachada4.jpg" alt="carousel4" class="carousel--xs w-100 mb-1 mb-lg-2">
-                        <div class="bg-black py-2 py-lg-3">
-                            <p class="mb-0 text-white text-center carousel--text">SEE ALL 10 PHOTOS</p>
+                        <div class="py-2 py-lg-3 hover--effectlight">
+                            <a class="mb-0 text-white text-center carousel--text text-decoration-none d-block" href="#">SEE ALL 10 PHOTOS</a>
                         </div>
                     </div>
                 </div>
@@ -240,18 +241,18 @@
     </div>
     <!-- select your room -->
     <h3 class="h4 mb-3 mb-sm-4">Select your room</h3>
-    <div class="d-md-flex align-items-center d-none mb-5">
-        <div class="bg-muted-lightest py-2 px-3 mr-2">
+    <ul class="list-unstyled d-md-flex align-items-center d-none mb-5">
+        <li class="bg-muted-lightest py-2 px-3 mr-2">
             <p class="text--sm text-muted mb-0">Bangkok, Thailand</p>
-        </div>
-        <div class="bg-muted-lightest py-2 px-3 text-muted mr-2">
+        </li>
+        <li class="bg-muted-lightest py-2 px-3 text-muted mr-2">
             <p class="text--sm text-muted mb-0">17 June - 19 June・2 nights</p>
-        </div>
-        <div class="bg-muted-lightest py-2 px-3 text-muted mr-4">
+        </li>
+        <li class="bg-muted-lightest py-2 px-3 text-muted mr-4">
             <p class="text--sm text-muted mb-0">2 adults・1 room</p>
-        </div>
-        <p class="text-primary mb-0">EDIT DETAIL</p>
-    </div>
+        </li>
+       <li><a class="text-primary mb-0 d-block hover--effect">EDIT DETAIL</a></li>
+    </ul>
     <!-- table -->
     <table class="table d-none d-sm-table">
         <thead>
@@ -744,7 +745,8 @@
             </div>
             <div class="col-12 col-md-8 col-lg-6">
                 <div class="input-group input-group-lg w-100">
-                    <input type="text" class="form-control rounded-left-sm rounded-right-0"
+                    <label for="subscribe"></label>
+                    <input type="email" id="subscribe" class="form-control rounded-left-sm rounded-right-0"
                         placeholder="Your email address" aria-label="Recipient's username"
                         aria-describedby="button-addon2">
                     <div class="input-group-append">
@@ -759,7 +761,7 @@
     </div>
 </div>
 
-<!-- coursel -->
+<!-- collapse -->
 <div class="bg-black rounded-top rounded-sm collapse position-absolute w-100 py-4" id="collapse">
     <div class="container-md">
         <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row">
@@ -768,7 +770,7 @@
                 <p class="h4 text-white mb-0">TWD 3,960</p>
             </div>
             <div class="mb-4 mb-sm-0">
-                <button class="btn btn-outline-light rounded-sm py-3 px-4 px-sm-5 mr-2">CANCEL</button>
+                <button class="btn btn-outline-light rounded-sm py-3 px-4 px-sm-5 mr-2" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapseExample">CANCEL</button>
                 <button class="btn btn-primary rounded-sm py-3 px-4 px-sm-5"><a href="reserve.html" class="text-decoration-none text-white">RESERVE</a></button>
             </div>
         </div>
@@ -782,9 +784,9 @@
     <div class="d-flex align-items-center justify-content-between flex-column-reverse flex-sm-row">
         <p class="text--sm text-muted mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex align-items-center mb-sm-0 mb-3">
-            <li class="text--sm text-muted px-1 ml-1">FAQs</li>
-            <li class="text--sm text-muted px-1 ml-1">Terms of use</li>
-            <li class="text--sm text-muted px-1 ml-1">Privacy policy</li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">FAQs</a></li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">Terms of use</a></li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">Privacy policy</a></li>
         </ul>
     </div>
     <div class="align-items-center d-none d-md-flex">
@@ -792,7 +794,7 @@
             <i class="material-icons">
                 language
             </i>
-            <select name="language" id="language" class="border-0 text--sm text-muted">
+            <select name="language" id="language" class="border-0 text--sm text-muted cursor--pointer">
                 <option value="English" selected>English</option>
                 <option value="Chinese">Chinese</option>
                 <option value="Japanese">Japanese</option>
@@ -802,7 +804,7 @@
             <i class="material-icons">
                 attach_money
             </i>
-            <select name="currency" id="currency" class="border-0 text--sm text-muted">
+            <select name="currency" id="currency" class="border-0 text--sm text-muted cursor--pointer">
                 <option value="TWD" selected>TWD</option>
                 <option value="USD">USD</option>
                 <option value="JPY">JPY</option>

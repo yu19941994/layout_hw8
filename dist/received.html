@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
-  <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -14,6 +13,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
@@ -59,89 +59,38 @@
         <div class="col-12 col-log-10">
             <h2 class="mb-5">Reservation received!</h2>
             <hr class="border-muted">
-            <table class="table table-borderless mb-4">
-                <thead>
-                    <tr>
-                        <th scope="col" class="pt-0 pb-3" width="200"></th>
-                        <th scope="col" class="pt-0 pb-3"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <h2 class="mb-0 h6">Guest</h2>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted">David Lin</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <h2 class="mb-0 h6">Email</h2>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted">david0520@mail.com.tw <span class="text--sm text-primary">Confirmation email sent to this address</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <h2 class="mb-0 h6">Phone</h2>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted">+886 9 32 456 789</p>
-                        </td>
-                    </tr>
-            
-                </tbody>
-            </table>
+            <div class="mb-4">
+                <div class="d-flex py-2">
+                    <h2 class="mb-0 h6 w-25">Guest</h2>
+                    <p class="mb-0 text-muted">David Lin</p>
+                </div>
+                <div class="d-flex py-2">
+                    <h2 class="mb-0 h6 w-25">Email</h2>
+                    <p class="mb-0 text-muted">David Lin<a class="text--sm text-primary text-decoration-none px-3" href="#">Confirmation email sent to this address</a></p>
+                </div>
+                <div class="d-flex py-2">
+                    <h2 class="mb-0 h6 w-25">Phone</h2>
+                    <p class="mb-0 text-muted">+886 9 32 456 789</p>
+                </div>
+            </div>
             <hr class="border-muted">
-            <table class="table table-borderless mb-4">
-                <thead>
-                    <tr>
-                        <th scope="col" class="pt-0 pb-3" width="200"></th>
-                        <th scope="col" class="pt-0 pb-3"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <h2 class="mb-0 h6">Room</h2>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted">Deluxe Suite with Pool / 2 nights</p>
-                        </td>
-                    </tr>
-                
-                </tbody>
-            </table>
+            <div class="mb-4">
+                <div class="d-flex py-2">
+                    <h2 class="mb-0 h6 w-25">Room</h2>
+                    <p class="mb-0 text-muted">Deluxe Suite with Pool / 2 nights</p>
+                </div>
+            </div>
             <hr class="border-muted">
-            <table class="table table-borderless mb-4">
-                <thead>
-                    <tr>
-                        <th scope="col" class="pt-0 pb-3" width="200"></th>
-                        <th scope="col" class="pt-0 pb-3"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <h2 class="mb-0 h6">Check-In</h2>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted">Wednesday, 17 June 2020</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="py-1">
-                            <h2 class="mb-0 h6">Check-Out</h2>
-                        </th>
-                        <td class="py-1">
-                            <p class="mb-0 text-muted">Friday, 19 June 2020</p>
-                        </td>
-                    </tr>
-            
-                </tbody>
-            </table>
+            <div class="mb-4">
+                <div class="d-flex py-2">
+                    <h2 class="mb-0 h6 w-25">Check-In</h2>
+                    <p class="mb-0 text-muted">Wednesday, 17 June 2020</p>
+                </div>
+                <div class="d-flex py-2">
+                    <h2 class="mb-0 h6 w-25">Check-Out</h2>
+                    <p class="mb-0 text-muted">Friday, 19 June 2020</p>
+                </div>
+            </div>
             <hr class="border-muted">
             <div class="d-flex flex-column flex-sm-row justify-content-end">
                 <button class="btn btn-outline-primary rounded-sm mr-2 mb-2 mb-sm-0 py-3 px-6">EDIT RESERVATION</button>
@@ -155,9 +104,9 @@
     <div class="d-flex align-items-center justify-content-between flex-column-reverse flex-sm-row">
         <p class="text--sm text-muted mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex align-items-center mb-sm-0 mb-3">
-            <li class="text--sm text-muted px-1 ml-1">FAQs</li>
-            <li class="text--sm text-muted px-1 ml-1">Terms of use</li>
-            <li class="text--sm text-muted px-1 ml-1">Privacy policy</li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">FAQs</a></li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">Terms of use</a></li>
+            <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted">Privacy policy</a></li>
         </ul>
     </div>
     <div class="align-items-center d-none d-md-flex">
@@ -165,7 +114,7 @@
             <i class="material-icons">
                 language
             </i>
-            <select name="language" id="language" class="border-0 text--sm text-muted">
+            <select name="language" id="language" class="border-0 text--sm text-muted cursor--pointer">
                 <option value="English" selected>English</option>
                 <option value="Chinese">Chinese</option>
                 <option value="Japanese">Japanese</option>
@@ -175,7 +124,7 @@
             <i class="material-icons">
                 attach_money
             </i>
-            <select name="currency" id="currency" class="border-0 text--sm text-muted">
+            <select name="currency" id="currency" class="border-0 text--sm text-muted cursor--pointer">
                 <option value="TWD" selected>TWD</option>
                 <option value="USD">USD</option>
                 <option value="JPY">JPY</option>
