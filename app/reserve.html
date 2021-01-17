@@ -22,8 +22,8 @@ current: index
     <div class="collapse" id="collapseExample">
         <div class="bg-secondary pt-4 rounded-sm">
             <div class="mb-4">
-                <h3 class="mb-3">Booking details</h3>
-                <ul class="list-inline">
+                <h3 class="mb-3 px-3">Booking details</h3>
+                <ul class="list-inline px-3">
                     <li class="py-1">
                         <p class="mb-0 text-muted text--sm">17 June 2020 - 19 June 2020・2 nights</p>
                     </li>
@@ -37,8 +37,8 @@ current: index
             </div>
             <hr class="border-white">
             <div class="mb-4">
-                <h3 class="mb-3">Price summary</h3>
-                <ul class="list-inline">
+                <h3 class="mb-3 px-3">Price summary</h3>
+                <ul class="list-inline px-3">
                     <li class="py-1 d-flex justify-content-between">
                         <p class="mb-0 text-muted text--sm">Deluxe Suite with Pool</p>
                         <p class="mb-0 text-muted text--sm">TWD 3,960</p>
@@ -55,8 +55,8 @@ current: index
             </div>
             <hr class="border-white">
             <div class="mb-4">
-                <h3 class="mb-3">Price summary</h3>
-                <div class="d-flex justify-content-between">
+                <h3 class="mb-3 px-3">Price summary</h3>
+                <div class="d-flex justify-content-between px-3">
                     <p class="mb-0 text-muted">Total</p>
                     <p class="mb-0">TWD 4,633</p>
                 </div>
@@ -82,83 +82,52 @@ current: index
                     <label for="phone" class="text-muted">Phone（optional）</label>
                     <input type="tel" class="form-control rounded-sm input--height" id="phone">
                 </div>
-                <button type="submit" class="btn btn-primary rounded-sm w-100 py-3 mb-2"><a href="received.html" class="text-decoration-none text-white">RESERVE</a></button>
+                <button class="btn btn-primary rounded-sm w-100 py-3 mb-2" type="button" onclick="location.href='received.html'">RESERVE</button>
                 <p class="text--sm text-primary text-center">Reserve now, pay at stay</p>
             </form>
         </div>
         <div class="col-md-6 col-lg-4 d-none d-md-block">
-            <div class="bg-muted-lightest p-4 rounded-sm">
-                <table class="table table-borderless mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="pt-0 pb-3">Booking details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="py-1">
-                                <p class="mb-0 text-muted text--sm">17 June 2020 - 19 June 2020・2 nights</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-1">
-                                <p class="mb-0 text-muted text--sm">2 adults・1 room</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-1">
-                                <p class="mb-0 text-muted text--sm">Rachada Hotel</p>
-                            </th>
-                        </tr>
-                       
-                    </tbody>
-                </table>
+            <div class="bg-secondary p-4 rounded-sm">
+                <div class="mb-4">
+                    <h3 class="mb-3 px-3 h6">Booking details</h3>
+                    <ul class="list-inline px-3">
+                        <li class="py-1">
+                            <p class="mb-0 text-muted text--sm">17 June 2020 - 19 June 2020・2 nights</p>
+                        </li>
+                        <li class="py-1">
+                            <p class="mb-0 text-muted text--sm">2 adults・1 room</p>
+                        </li>
+                        <li class="py-1">
+                            <p class="mb-0 text-muted text--sm">Rachada Hotel</p>
+                        </li>
+                    </ul>
+                </div>
                 <hr class="border-white">
-                <table class="table table-borderless mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="pt-0 pb-3">Price summary</th>
-                            <th scope="col" class="pt-0 pb-3"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="py-1">
-                                <p class="mb-0 text-muted text--sm">Deluxe Suite with Pool</p>
-                            </th>
-                            <td class="py-1">
-                                <p class="mb-0 text-muted text--sm">TWD 3,960</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-1">
-                                <p class="mb-0 text-muted text--sm">VAT (7%)</p>
-                            </th>
-                            <td class="py-1">
-                                <p class="mb-0 text-muted text--sm">TWD 277</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-1">
-                                <p class="mb-0 text-muted text--sm">Property service charge</p>
-                            </th>
-                            <td class="py-1">
-                                <p class="mb-0 text-muted text--sm">TWD 396</p>
-                            </td>
-                        </tr>
-                
-                    </tbody>
-                </table>
+                <div class="mb-4">
+                    <h3 class="mb-3 px-3 h6">Price summary</h3>
+                    <ul class="list-inline px-3">
+                        <li class="py-1 d-flex justify-content-between">
+                            <p class="mb-0 text-muted text--sm">Deluxe Suite with Pool</p>
+                            <p class="mb-0 text-muted text--sm">TWD 3,960</p>
+                        </li>
+                        <li class="py-1 d-flex justify-content-between">
+                            <p class="mb-0 text-muted text--sm">VAT (7%)</p>
+                            <p class="mb-0 text-muted text--sm">TWD 277</p>
+                        </li>
+                        <li class="py-1 d-flex justify-content-between">
+                            <p class="mb-0 text-muted text--sm">Property service charge</p>
+                            <p class="mb-0 text-muted text--sm">TWD 396</p>
+                        </li>
+                    </ul>
+                </div>
                 <hr class="border-white">
-                <table class="table table-borderless mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="py-0 text-muted">Total</th>
-                            <th scope="col" class="py-0 text-right">TWD 4,633</th>
-                        </tr>
-                    </thead>
-                  
-                </table>
+                <div class="mb-4">
+                    <h3 class="mb-3 px-3 h6">Price summary</h3>
+                    <div class="d-flex justify-content-between px-3">
+                        <p class="mb-0 text-muted">Total</p>
+                        <p class="mb-0">TWD 4,633</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
