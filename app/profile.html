@@ -99,24 +99,26 @@
                     <div class="profile--areawidth">
                         <h3 class="h6 mb-4">Payment methods</h3>
                         <ul class="list-unstyled d-flex">
-                            <li class="hover--effectdark rounded p-3 mr-2 w-50">
-                                <p class="text-muted text--sm mb-0">
-                                    xxxx-xxxx-7890
-                                </p>
-                                <p class="text-muted text--sm mb-0">
-                                    DAVID LIN
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="text-muted text--sm mb-0">
+                            <li class="bg-white rounded p-3 mr-2 w-50">
+                                <a href="#" class="hover--effectdark text-decoration-none d-block">
+                                    <span class="text-muted text--sm">
+                                        xxxx-xxxx-7890
+                                    </span>
+                                    <span class="text-muted text--sm">
+                                        DAVID LIN
+                                    </span>
+                                    <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                                    <span class="text-muted text--sm mb-0">
                                         08/2029
-                                    </p>
-                                    <span class="material-icons text--md">
+                                    </span>
+                                    <span class="material-icons text--md text-right text-muted">
                                         credit_card
                                     </span>
-                                </div>
+                                    <!-- </div> -->
+                                </a>
                             </li>
-                            <li class="hover--effectdark rounded w-50 d-flex align-items-center justify-content-center">
-                                <a href="#">
+                            <li class="bg-white rounded w-50 d-flex align-items-center justify-content-center">
+                                <a href="#" class="hover--effectdark p-3">
                                     <span class="material-icons text-primary text--mxl">
                                         add_circle
                                     </span>
@@ -230,9 +232,12 @@
         <div class="d-flex align-items-center justify-content-between flex-column-reverse flex-sm-row">
             <p class="text--sm text-muted mb-0">© 2020 ALOHA, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex align-items-center mb-sm-0 mb-3">
-                <li class="text--sm text-muted px-1 ml-1">FAQs</li>
-                <li class="text--sm text-muted px-1 ml-1">Terms of use</li>
-                <li class="text--sm text-muted px-1 ml-1">Privacy policy</li>
+                <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted hover--effect">FAQs</a>
+                </li>
+                <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted hover--effect">Terms of
+                        use</a></li>
+                <li class="text--sm px-1 ml-1"><a href="#" class="text-decoration-none text-muted hover--effect">Privacy
+                        policy</a></li>
             </ul>
         </div>
         <div class="align-items-center d-none d-md-flex">
@@ -240,7 +245,7 @@
                 <i class="material-icons">
                     language
                 </i>
-                <select name="language" id="language" class="border-0 text--sm text-muted">
+                <select name="language" id="language" class="border-0 text--sm text-muted cursor--pointer">
                     <option value="English" selected>English</option>
                     <option value="Chinese">Chinese</option>
                     <option value="Japanese">Japanese</option>
@@ -250,7 +255,7 @@
                 <i class="material-icons">
                     attach_money
                 </i>
-                <select name="currency" id="currency" class="border-0 text--sm text-muted">
+                <select name="currency" id="currency" class="border-0 text--sm text-muted cursor--pointer">
                     <option value="TWD" selected>TWD</option>
                     <option value="USD">USD</option>
                     <option value="JPY">JPY</option>
