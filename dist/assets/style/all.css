@@ -11414,7 +11414,6 @@ p {
   background-image: url("../images/login.jpg");
   background-position: center center;
   background-size: cover;
-  max-width: 815px;
   height: 100vh; }
 
 .bg--padimg {

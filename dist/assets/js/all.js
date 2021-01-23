@@ -72,8 +72,12 @@ $(document).ready(function () {
     $(".carousel__item--active img").attr("src", $(this).attr('src'));
     return false;
   });
-});
-$(document).ready(function () {
+}); // $(document).ready(function() {
+// 	$('#datepick').datepicker()
+// });
+
+$(function () {
   $('#datepick').datepicker();
+  s;
 });
 //# sourceMappingURL=all.js.map
