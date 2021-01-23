@@ -79,6 +79,9 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function() {
-	$('#datepick').datepicker()
-});
+// $(document).ready(function() {
+// 	$('#datepick').datepicker()
+// });
+$(function(){
+  $('#datepick').datepicker();s
+})
