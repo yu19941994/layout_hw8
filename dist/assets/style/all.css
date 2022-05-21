@@ -10250,6 +10250,7 @@ a.text-black:hover, a.text-black:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+html,
 body {
   overflow-x: hidden; }
 
